@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Application for permission to date my daughter</h1>
+        <p>
+          <strong>Note: </strong>form is to be completed at least 21 days prior
+          to date
+        </p>
+      </header>
+      <form class="form">
+        <span class="p_details"><strong>Personal Details</strong></span>
+        <div class="form_group">
+          <label for="name">Name: </label>
+          <input required placeholder="Enter name here" id="name" type="text" />
+        </div>
+        <div class="form_group">
+          <label for="address">Address: </label>
+          <input
+            required
+            placeholder="Enter address here"
+            id="address"
+            type="text"
+          />
+        </div>
+        <div class="form_group">
+          <label for="email">Email: </label>
+          <input
+            required
+            placeholder="Enter email here"
+            id="email"
+            type="email"
+          />
+        </div>
+        <div class="form_group">
+          <label for="number">Phone Number: </label>
+          <input
+            required
+            placeholder="Enter 10 digit number"
+            id="number"
+            type="number"
+          />
+        </div>
+        <div class="form_group">
+          <label for="iq">IQ: </label>
+          <input required placeholder="Enter IQ here" id="iq" type="number" />
+        </div>
+        <p>Gender</p>
+        <div>
+          <input type="radio" name="gender" id="male" checked />
+          <label class="label-inline" for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" />
+          <label class="label-inline" for="female">Female</label>
+        </div>
+        <div class="form_group">
+          <input type="radio" name="gender" id="others" />
+          <label class="label-inline" for="others">Others</label>
+        </div>
+        <div class="form_group">
+          <label for="date">Date of Proposed Outing: </label>
+          <input required id="date" type="date" />
+        </div>
+      </form>
+      <form action="" class="form">
+        <p>Check All That Apply</p>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="tattoos" />
+          <label class="label-inline" for="tattoos"
+            >I have tattoos and/or piercings</label
+          >
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="age" />
+          <label class="label-inline" for="age"
+            >I am more than 2 years older than my daughter</label
+          >
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="van" />
+          <label class="label-inline" for="van"
+            >I own a panel van or V8 ute</label
+          >
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="work" checked />
+          <label class="label-inline" for="work">I work full-time</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="parents" checked />
+          <label class="label-inline" for="parents">My parents are rich</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="date" checked />
+          <label class="label-inline" for="date"
+            >Is the date at a well lit public location</label
+          >
+        </div>
+      </form>
+      <form action="" class="form">
+        <div class="dropdown_list">
+          <label for="pp" class="label-inline">Political Persuation:</label>
+          <select name="" id="pp">
+            <option value="">Left Wing</option>
+            <option value="1">Rigth Wing</option>
+            <option value="2">Conservatives</option>
+            <option value="3">Nazi</option>
+          </select>
+          <label for="" class="label-inline">Education Level</label>
+        </div>
+        <div>
+          <label for="completed" class="label-inline">Completed</label>
+          <select name="" id="completed">
+            <option value="">University</option>
+            <option value="1">College</option>
+            <option value="2">High school</option>
+            <option value="3">None</option>
+          </select>
+        </div>
+      </form>
+      <form action="" class="form">
+        <span class="p_details"><strong>Essay Section</strong></span>
+        <p>In 50 words or more explain why you want to date my daughter</p>
+        <div class="form_group">
+          <textarea
+            placeholder="Enter text here"
+            name=""
+            id=""
+            cols="50"
+            rows="4"
+          ></textarea>
+        </div>
+        <p>Please upload contact details for 2 references</p>
+        <div class="form_group">
+          <textarea
+            placeholder="Enter text here"
+            name=""
+            id=""
+            cols="50"
+            rows="4"
+          ></textarea>
+        </div>
+        <p>
+          Upload police clerance certificate, Bank statements and Medical
+          certificate here: <input type="file" id="myFile" name="filename" />
+        </p>
+      </form>
+      <div class="button">
+        <button type="submit">Send your application</button>
+      </div>
+    </div>
+  </body>
+</html>
